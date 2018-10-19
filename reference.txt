@@ -1,0 +1,11 @@
+<section class='topic'>
+    <div class="card border-info mb-3">
+        <div class="card-header heading-name">What is Agile?</div>
+        <div class="card-body">
+            <h4 class="card-title">Definition</h4>
+            <p class="card-text">
+                Agile is an ability to create and respond to change in order to succeed in an uncertain and turbulent environment.
+            </p>
+        </div>
+    </div>
+</section>

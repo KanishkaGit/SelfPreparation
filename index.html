@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href='https://bootswatch.com/4/lux/bootstrap.min.css' rel='stylesheet' />
+    <link href='Style/custom.css' rel='stylesheet' />
+    <title>Personal Notes</title>
+</head>
+
+<body onload="onload()" class="bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class=" navbar-brand btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span>Preparation Metarial</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 48px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <content id='content-table'></content>
+            </div>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <span class="mr-auto"></span>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-primary" type="button">Home</button>
+                <button class="btn btn-primary" type="button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <div class='jumbotron pb-1 mb-1'>
+        <header>
+            <p class="lead">
+                Journey from 
+                <span class='text-warning'>Nothing</span> to
+                <span class='text-warning'>Something</span> in Software Engineering...
+            </p>
+        </header>
+    </div>
+    <section class='container pb-5 pt-5 mb-0 text-left'>
+        <content id="result"></content>
+    </section>
+    <button id='nextButton' type="button" class='btn btn-primary btn-sm btn-next' onclick="getRoutefforNext()">Next &#x21ac;</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src='Script/custom.js'></script>
+</body>
+</html>
