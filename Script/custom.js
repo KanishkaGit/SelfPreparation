@@ -64,7 +64,8 @@ function callAjax(screenName) {
 
 
 function doAjax(screenName) {
-    var baseURL = window.location.origin + "/WebPages/" + screenName;
+    //var baseURL = `https://kanishkagit.github.io/selfPreparation/WebPages/${screenName}`;
+    var baseURL = `http://127.0.0.1:5500/WebPages/${screenName}`;
     fetch(baseURL).then(response => {
         response.text().then(data => {
             document.querySelector("#result").innerHTML = data;
