@@ -64,12 +64,11 @@ function callAjax(screenName) {
 
 
 function doAjax(screenName) {
-<<<<<<< HEAD
-    //var baseURL = `https://kanishkagit.github.io/selfPreparation/WebPages/${screenName}`;
-    var baseURL = `http://127.0.0.1:5500/WebPages/${screenName}`;
-=======
+
+    var baseURL = `https://kanishkagit.github.io/selfPreparation/WebPages/${screenName}`;
+    //var baseURL = `http://127.0.0.1:5500/WebPages/${screenName}`;
+
     var baseURL ="https://kanishkagit.github.io/selfPreparation/WebPages/" + screenName;
->>>>>>> e5a5a10db562c2da6dec44ba4badfafcf54cd9b5
     fetch(baseURL).then(response => {
         response.text().then(data => {
             document.querySelector("#result").innerHTML = data;
