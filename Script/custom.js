@@ -2,7 +2,6 @@ function onload() {
     var id = Number(getQueryStringValue("id"));
     var sid = Number((getQueryStringValue("subid") == undefined) ? 0 : getQueryStringValue("subid"));
     getRoute(id, sid);
-    hljs.initHighlightingOnLoad();
 }
 
 
