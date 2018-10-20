@@ -2,16 +2,42 @@
     {
         "id": 0,
         "screenName": "finish.html",
-        "name": "To be Continued..."
+        "name": "To be Continued...",
+        "sub": "NA"
     },
     {
         "id": 1,
         "screenName": "1_introduction.html",
-        "name": "Introduction"
+        "name": "Introduction",
+        "sub": "NA"
     },
     {
         "id": 2,
+        "screenName": "oop_home.html",
+        "name": "Object Oriented Programming",
+        "sub": [
+            {
+                "id": 0,
+                "screenName": "OOPs/finish.html",
+                "name": "To be Continued..."
+            },
+            {
+                "id": 1,
+                "screenName": "OOPs/AbstractClasses.html",
+                "name": "Abstract Classes"
+            }
+        ]
+    },
+    {
+        "id": 3,
         "screenName": "agile.html",
-        "name": "Agile Methodology"
+        "name": "Agile Methodology",
+        "sub": "NA"
+    },
+    {
+        "id": 4,
+        "screenName": "designPattern.html",
+        "name": "Design Patterns",
+        "sub": "NA"
     }
 ]
