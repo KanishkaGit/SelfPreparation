@@ -123,6 +123,10 @@ function getContent() {
                 contentList += element.name;
             });
             document.querySelector('#content-table').innerHTML = contentList;
+			document.querySelector('#content-table').innerHTML = contentList;
+            if (document.querySelector('#content-intro') != undefined){
+                document.querySelector('#content-intro').innerHTML = contentList;
+            }
         });
     }
 }
@@ -181,7 +185,7 @@ function getSubList(subObj) {
         if (subObj.sub != undefined) {
             subObj.sub.forEach(node => {
                 if (node.id > 0) {
-                    tagsHtml += `<button class='btn btn-lg btn-primary mr-1' onclick="getRoute(${subObj.id},${node.id})">${node.name}</button>`;
+                    tagsHtml += `<div class='col-sm-12 col-md-6 col-lg-4'><button class='btn btn-lg btn-primary mb-1 btn-block' onclick="getRoute(${subObj.id},${node.id})">${node.name}</button></div>`;
                     document.querySelector('#tag-section').innerHTML = tagsHtml
                 }
             });

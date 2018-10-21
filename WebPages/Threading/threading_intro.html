@@ -2,9 +2,24 @@
 <section id='tag-section' class='alert alert-warning'></section>
 <section class='topic'>
     <div class="card mb-3">
-        <div class="card-header heading-name  bg-primary text-white">Working</div>
+        <div class="card-header heading-name  bg-primary text-white">Operating systems Multi Tasking</div>
         <div class="card-body">
-            <!-- <h4 class="card-title">Definition</h4> -->
+            <p class="card-text">
+                At some point in the past, a CPU had only one core and it was not possible to execute several computing tasks simultaneously. However Operating systems could already work with multiple programs simultaneously, implementing the concept of Multi tasking. <br>
+                <warning>In order to avoid a situation, where only one program is taking control of the CPU and causing other applications and CPU itself to hang, the operating system had to somehow, create virtual processing units and provide each application with one for its own operations</warning>. <br>Morover, an operating system itself being an application running on the computing unit, needed to have priority access to the unit over other applications in order to prioritize tasks. <h-text>A thread is an implementation of this concept. It is a virtual processor given to any program that runs it independantly</h-text>.
+                <hr>
+                In a time of single core CPUs, this task was left to operating systems, because trying to manage a single processor to manage multiple threads would actually make the operation slower. (<warning>A thread is a process heavy operation, and in a single core many threads might lead to lag as the processor would be busy managing threads rather than executing them</warning>)
+                <br>
+                But with mordern multi core CPUs it is possible to manage an application by running various tasks in various threads in an application communicationg and synchronizing with each other.
+
+            </p>
+        </div>
+    </div>
+</section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">Processes and Threads</div>
+        <div class="card-body">
             <p class="card-text">
                 Windows in capable of running more than one applications. This Is called
                 <h-text>Multi Tasking</h-text>. Internally it use something called a process.
@@ -12,7 +27,7 @@
                 <br> A process uses something called a thread to execute the code of the application.
                 <h-text>A thread is an unit that will execute the logic in an application.In simple words a thread is an unit of
                     a process.</h-text>
-                    <hr/>
+                <hr/>
                 <success>
                     When we are using MS Word, for writing a document and playing music at the same time, we are using two processes in the operating
                     system. This can be referred to as Multi-tasking.

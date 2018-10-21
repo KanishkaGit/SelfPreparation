@@ -28,11 +28,31 @@
             },
             {
                 "id": 2,
+                "screenName": "OOPs/Inheritance.html",
+                "name": "OOps - Inheritance"
+            },
+            {
+                "id": 3,
+                "screenName": "OOPs/Abstraction.html",
+                "name": "OOps - Abstraction"
+            },
+            {
+                "id": 4,
+                "screenName": "OOPs/Encapsulation.html",
+                "name": "OOps - Encapsulation"
+            },
+            {
+                "id": 5,
+                "screenName": "OOPs/Polymorphism.html",
+                "name": "OOps - Polymorphism"
+            },
+            {
+                "id": 6,
                 "screenName": "OOPs/AbstractClasses.html",
                 "name": "Abstract Classes"
             },
             {
-                "id": 3,
+                "id": 7,
                 "screenName": "OOPs/Interfaces.html",
                 "name": "Interfaces"
             }
@@ -51,7 +71,7 @@
             {
                 "id": 1,
                 "screenName": "Blockchain/intro.html",
-                "name": "Blockchain Introduction"
+                "name": "Introduction"
             }
         ]
     },
@@ -63,9 +83,20 @@
     },
     {
         "id": 5,
-        "screenName": "designPattern.html",
+        "screenName": "designPattern_home.html",
         "name": "Design Patterns",
-        "sub": "NA"
+        "sub": [
+            {
+                "id": 0,
+                "screenName": "DesignPattern/finish.html",
+                "name": "To be Continued..."
+            },
+            {
+                "id": 1,
+                "screenName": "DesignPattern/designPattern_intro.html",
+                "name": "Introduction"
+            }
+        ]
     },
     {
         "id": 6,
@@ -80,7 +111,7 @@
             {
                 "id": 1,
                 "screenName": "Threading/threading_intro.html",
-                "name": "Threading and Multithreading - Introduction"
+                "name": "Introduction"
             }
         ]
     }

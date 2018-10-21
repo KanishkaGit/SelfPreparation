@@ -44,3 +44,8 @@ h5 img{
 pre{
     margin: 10px 0px 10px 0px;   
 }
+
+#content-intro a{
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
