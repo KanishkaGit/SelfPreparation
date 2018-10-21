@@ -2,23 +2,108 @@
 <section id='tag-section' class='alert alert-warning'></section>
 <section class='topic'>
     <div class="card mb-3">
-        <div class="card-header heading-name  bg-info text-white">Abstract Methods</div>
+        <div class="card-header heading-name  bg-info text-white">Abstract Classes and Methods</div>
         <div class="card-body">
             <p class="card-text">
+                <h4 class="card-title">Abstract Methods</h4>
                 Abstract Methods are methods
                 <h-text>without a definition</h-text>. So, a method
                 <h-text>without any method body</h-text> is known as an Abstract Method. What it contains is
-                <h-text>only declaration of the method</h-text>.
-                <pre><code class="cs">
-                    //not an Abstract Method
-                    public void Add(int x, int y){
-                        //Method Body
-                    }
+                <h-text>only declaration of the method and no definition.</h-text>. It has to be declared with a keyword
+                <warning>abstract</warning> to specify to the compiler that it is an abstract class
+                <pre><code class="cs">//not an Abstract Method
+public void Add(int x, int y){
+    //Method Body
+}
 
-                    //Abstract Method
-                    public abstract void Add(int x, int y);
-                    //Abstract Methods are to be defined by using abstract keywords
-                </code></pre>
+//Abstract Method
+public abstract void Add(int x, int y);
+//Abstract Methods are to be defined by using abstract keywords</code></pre>
+                <h-text>If an Abstract Method is to be defined it is mandatorily be done inside an Abstract Class</h-text>
+                <hr/>
+                <h4 class="card-title">Abstract Class</h4>
+                Hence with the abstract class the above method would be declared as below
+                <pre><code class="cs">//Abstract Class - May or may not contain Abstract Members
+abstract class Math{
+    //Abstract Method - has to be defined inside an Abstract Class
+    public abstract void Add(int x, int y);
+}</code></pre>
+                If any class needs to contain incomplete method, and cannot provide implementation of all the methods, it is called Abstract Class.<h-text>An Abstract Class May or May not contain any abstract members.</h-text> and has to be declared with the keyword
+                <warning>abstract</warning>.
+                <div>
+                    The content of an abstract class can be
+                    <h-text>both abstract methods and non abstract methods</h-text>.
+                </div>
+                <br>
+                Since an Abstract class cannot have implementation of all the methods, it is <h-text>not allowed to create and object or instantiate an abstract class</h-text>. It can only be inherited by other classes who will then have to implement the incomplete classes.
+                <br>
+                In case the child class is also initiated as an Abstract class, only then it is not mandatory for the child class to implement all the abstract methods as it is now allowed to have incomplete methods.
+            </p>
+        </div>
+    </div>
+</section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-info text-white">Working</div>
+        <div class="card-body">
+            <p class="card-text">
+                Since the definition of any abstract methods are not done in the abtsract class, the question arises of where will the declarations
+                be?
+                <br> So it is a mandate that any class that inherits from the an abstract class will
+                <h-text>mandatorily have to implement the abstract methods of the class</h-text>. Unlike regular inheritance, abstract
+                classes have the
+                <h-text>capacity to define rules</h-text> on what methods are to defined in the child classes.
+                <div>
+                    <warning>
+                        Hence, a child class can only access the available methods in the parent class provided that all the restrictions/ ruled
+                        are being followed (implementing the abstract methods without fail) by those in the parent class.
+                    </warning>
+                </div>
+                <hr/>
+                <h5 class="card-title">The concept of abstract methods will be somewhat similar to the
+                    <span class='heading-name'>method overriding</span> from regular inheritance</h5>
+                Below is the example of regular inheritance and its method overriding where the child class
+                <h-text>may</h-text> override the virtual methods of the parent class.
+                <pre><code class="cs">//Parent Class
+class ParentClass{
+    public virtual void someMethod(){
+        //parent method body
+        //Re-Implementation
+    }
+}
+//Child Class
+class ChildClass : ParentClass{
+    public override void someMethod(){ //Optional
+        //child method body
+    }
+}</code></pre> In the above example,
+                <warning>in case a parent class has defined any methods as virtual, the child class can override the same and make
+                    its own version of the method. But the stated activity is an optional one</warning>.Also, the method
+                being overriden is
+                <h-text>Re Implemented</h-text> in case of normal method overriding.
+                <br>
+                <br> Below is an example of the method overriding as done in an abstract class.
+                <pre><code class="cs">//Abstract Parent Class
+abstract class ParentClass{
+    //Abstract Method
+    public abstract void someMethod();
+}
+//Child Class
+class ChildClass : ParentClass{
+    public override void someMethod(){ //Mandatory
+        //child method body
+        //Implementation
+    }
+}</code></pre> In the above example,
+                <warning>in case a parent class has defined any methods as abstract, the child class
+                    <h-text>has to</h-text> override the same and implement the method. But the stated activity is an Mandatory one</warning>.In
+                this case, the method being overriden is
+                <h-text>Purely Implemented</h-text> as opposed to just implementation of regular inheritance.
+                <br><br>
+                <h5 class="card-title">Asset and Liability</h5>
+                <success>
+                    For an example of definition of abstract classes, if a parent owns a house, then the child has the rights to acquire the house if permitted by the parent. Now, assuming that the house is on a loan. In case the child wants to acquire the house (asset), he has to clear the loan (liability), and only then will he  be able to completely acquire the house.
+                </success>
             </p>
         </div>
     </div>

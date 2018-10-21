@@ -1,0 +1,44 @@
+<h1 class='page-header'>Threading and MultiThreading - Introduction</h1>
+<section id='tag-section' class='alert alert-warning'></section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">Working</div>
+        <div class="card-body">
+            <!-- <h4 class="card-title">Definition</h4> -->
+            <p class="card-text">
+                Windows in capable of running more than one applications. This Is called
+                <h-text>Multi Tasking</h-text>. Internally it use something called a process.
+                <h-text>A process is a part of an operating system, that is responsible for executing an application.</h-text>
+                <br> A process uses something called a thread to execute the code of the application.
+                <h-text>A thread is an unit that will execute the logic in an application.In simple words a thread is an unit of
+                    a process.</h-text>
+                    <hr/>
+                <success>
+                    When we are using MS Word, for writing a document and playing music at the same time, we are using two processes in the operating
+                    system. This can be referred to as Multi-tasking.
+                    <br> Inside MS word, while we are typing, the spell check is done at the same time. Hence , in priciple the
+                    sub tasks are called threads. So, in the main process of creating a document in
+                    <h-text>MS word</h-text>, there are two threads that are running in the background
+                    <h-text>Typing thread</h-text> and
+                    <h-text>Spell Check Thread</h-text>. This is referred to as Multi Threading.
+                </success>
+                <hr>
+                <h-text>Every process by default consists a single thread, which is called the main thread. So, by default every
+                    application runs in a sigle threaded model.</h-text>
+                <hr>
+                <warning>The drawback of a single threaded model is that, there will be only one thread responsible for executing
+                    all the methods, and hence it will be called one by one. and hence will make the system slow.</warning>
+                <br>
+                <hr/> Why use multithreading
+                <ol>
+                    <li>By default all application use only one thread. To Leverage the multicore CPU of mordern computers, multi
+                        threading would faten up the operation of the same application.</li>
+                    <li>
+                        In longer operations, if we want the user not to wait and hence, we will run the tasks two different threads. This is also
+                        called asynchronous tasks.
+                    </li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</section>

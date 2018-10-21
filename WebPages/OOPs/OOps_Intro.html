@@ -1,0 +1,221 @@
+<h1 class='page-header'>Object Oriented Programming - Introduction</h1>
+<section id='tag-section' class='alert alert-warning'></section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">Overview</div>
+        <div class="card-body">
+            <p class="card-text">
+                Object Oriented Programming can be defined as a
+                <h-text>paradign or design of solving software programming problems</h-text> using the concept of collaborating objects.
+                Object collaorate by sending messages to each other. Hence OOP focuses more on the
+                <h-text>actual object that is being operated on and the data</h-text> inside it rather than the
+                <h-text>actions and logic</h-text> behind it.
+                <br> Hence OOP relies on the data and behaviors of the object to define the operations and logics and hence is
+                more geenralized over the entirity of the solution.
+                <br>
+                <br> OOP relies on two major concepts for implementation of the same. They would be as follows.
+                <ol>
+                    <li>Objects</li>
+                    <li>Classes</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">Objects</div>
+        <div class="card-body">
+            <p class="card-text">
+                Objects can be defined as
+                <h-text>real life entities</h-text> that have some
+                <h-text>data and behaviors</h-text> associated with it. Examples of real life entites would be Cars, House, Account,
+                Employee etc. In OOP, an object is defined as a set of two group of it's characteristics -
+                <ol>
+                    <li>
+                        <warning>States</warning> - These are the characteristics of an Object which define it in a way and describe
+                        it in general.
+                    </li>
+                    <li>
+                        <warning>Behaviors</warning> - These are specific distictive actions thatn can be done by the object.
+                    </li>
+                </ol>
+                Put another way, an object encapsulates data and the functions that operate on that data. The data is usually hidden from
+                other objects so that the only way to affect the data is through the object’s functions (or methods)
+                <br>
+                <success>
+                    A simple example of an object would be a person. Logically, you would expect a person to have a name. This would be considered
+                    a property of the person. You could also expect a person to be able to do something, such as walking
+                    or driving. This would be considered a method of the person.
+                </success>
+                <br>
+                <br>
+                <success>
+                    If we consider our Dog as an object, inorder to differentiate from(or characterize like) any other Dog, it sould have some
+                    State - name, color, breed and will also have some behaviors - barking, fetching, eating.
+                </success>
+                <br>
+                <br>
+                <warning>
+                    In programming, the states are represented using variables and behaviors using methods. So, in programming terms,
+                    <h-text>an Object can also be defined as a software bundle of variables and related methods</h-text>.
+                </warning>
+            </p>
+        </div>
+</section>
+</div>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">Classes</div>
+        <div class="card-body">
+            <p class="card-text">
+                If we have understood objects, we already know that an object is an entity with a set of properties and behaviors. It should
+                be quite evident that aan object can have the some properties and behaviors that are common with other objects.
+                <success>For example, your dog and my dog, both will have a name, both will bark and run and eat at more</success>.
+                Which is where classes come into play.
+                <br>
+                <h-text>A class defines a blueprint or template of what the object would consist of.</h-text> Hence a class will
+                have some properties and behaviors, which will be the properties and behaviors of the object that is being
+                created from the class.
+                <h-text>This creation of object from a class is called instatiation of an Object.</h-text> Hence in order to get
+                an entity from a blueprint, we create an instance of the class (blueprint) called an object(entity).
+                <hr> if we look in the following example with the analogy of the Dog, things will be simpler to understant.
+                <div class='row'>
+                    <div class='col-sm-12 col-md-4 col-lg-4'>
+                        <div class="card mb-3">
+                            <div class="card-header bg-warning text-white">Class Dog</div>
+                            <div class="card-body">
+                                <div class='card-text'>
+                                    States
+                                    <ul>
+                                        <li>Name</li>
+                                        <li>Color</li>
+                                        <li>Breed</li>
+                                    </ul>
+                                    Behaviors
+                                    <ul>
+                                        <li>Bark()</li>
+                                        <li>Eat()</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-4 col-lg-4'>
+                        <div class="card mb-3">
+                            <div class="card-header bg-info text-white">Object MyDog</div>
+                            <div class="card-body">
+                                <div class='card-text'>
+                                    <success>I am a Dog</success>
+                                    <br> States
+                                    <ul>
+                                        <li>Robby</li>
+                                        <li>Brown</li>
+                                        <li>Beagle</li>
+                                    </ul>
+                                    Behaviors
+                                    <ul>
+                                        <li>Bark()</li>
+                                        <li>Eat()</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-4 col-lg-4'>
+                        <div class="card mb-3">
+                            <div class="card-header bg-info text-white">Object YourDog</div>
+                            <div class="card-body">
+                                <div class='card-text'>
+                                    <success>I am also a Dog</success>
+                                    <br> States
+                                    <ul>
+                                        <li>Lucy</li>
+                                        <li>Golden</li>
+                                        <li>Retriever</li>
+                                    </ul>
+                                    Behaviors
+                                    <ul>
+                                        <li>Bark()</li>
+                                        <li>Eat()</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h-text>Hence classes can also be defined as the abstract characteristics of an object, that provides the structure
+                    or a pattern that defines something unique or distictive based on the values of those characteristics.</h-text>
+            </p>
+        </div>
+    </div>
+</section>
+<section class='topic'>
+    <div class="card mb-3">
+        <div class="card-header heading-name  bg-primary text-white">OOP</div>
+        <div class="card-body">
+            <p class="card-text">
+                The above explained concepts would be important in order to understand the OOP concept more clearly, and hence we are going
+                to summarize the above stated meanings in a jist.
+                <ul>
+                    <li>
+                        <warning>
+                            A class is a description (model) of real objects and events called entities.
+                        </warning>
+                    </li>
+                    <li>
+                        <warning>
+                            A class consists of characteristics behaviors that are characteristics of the object that is instantiated from it.
+                        </warning>
+                    </li>
+                    <li>
+                        <warning>
+                            The characteristics of a class is called properties and behaviors is called methods.
+                        </warning>
+                    </li>
+                    <li>
+                        <warning>
+                            Objects are the instance of the class. Hence they are the physical entities that have been derived from the class.
+                        </warning>
+                    </li>
+                    <li>
+                        <warning>
+                            A class is a description (model) of real objects and events called entities.
+                        </warning>
+                    </li>
+                </ul>
+                <h4>Object oriented Programming paradigm</h4>
+                The OOP paradigm consists of working with Classes and Objects and it's Implementations, and use of the fundamental principles
+                and concepts of OOP :
+                <h-text>Inheritance, absraction, encapsulation and Polymorphism</h-text>.
+                <ul>
+                    <li>
+                        <h5 class='heading-name'>Inheritance</h5>
+                        Inheritance is a fundamental principle of OOP which allows one class to <h-text>inherit or use properties and behaviors</h-text> of another ,more geenral class. <success>For example a Lion is an animal which has similar characteristics of a Cat like it will have four legs, are predators and hunt their prey. Hence Lion will a class that could inherit property from a Cat</success>. In this way, the characteristics can be defined once and can be used for all the animals that are cats in some way or other can be grouped into one.<br>
+                        This also helps in the fact that if one day, all cats decide to buy their food and not hunt, it can be done in one class and the same will be reflected to the entire family. This helps easy maitanibility.
+                    </li>
+                    <li>
+                        <h5 class='heading-name'>Abstraction</h5>
+                        Abstraction is another core principle of OOP, that means to work with something where we only <h-text>know How to use and not concerned with what it is doing internally to accomplish that</h-text>. <success>A very convinient example would be of a Television, where we know how to operate the remote, go to our favourite channes, and watch what we want to, without actually knowing about how it is acheiving the same.</success>
+                    </li>
+                    <li>
+                        <h5 class='heading-name'>Encapsulation</h5>
+                        Encapsulation is another key principle of OOP, where the object provides the user with the essential information and hide all the internal details, if not needed to<success>An example of encapsulation would be a secratary using a laptop, who knows only the screen and not the internal details of the laptop because she doesnt need to. She only has access to apps which is required for her day to day operations.</success><br>
+                        A basic doubt in people's mind is about how is abstraction different from encapsulation. Please refer below  details. 
+                        <ul>
+                            <li>
+                                Abstraction has to do with separating interfaces from implementation. (We don't care how it is doen, if it does what it is needed to).<br>
+                                Encapsulation has to do with access of data, on what is supposed to be exposed and what not.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5 class='heading-name'>Polymorphism</h5>
+                        The Next important concept of OOP is polymorphism. <h-text>Polymorphism allows treating objects of derived class as objects of its base class</h-text>. <success>For example, all objects of Cats like cheetah, Lion, House Cat will have different ways to catch their prey, but using polymorphism, we can make the catching prey behavior of each derived class to act differently by using the same name but changing the behavior in the derived class</success>. This is also called as overriding.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</section>

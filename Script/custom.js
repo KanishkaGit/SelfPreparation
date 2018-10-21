@@ -134,7 +134,7 @@ function getTagsforPage() {
     if (document.querySelectorAll('.heading-name') != null) {
         document.querySelectorAll('.heading-name').forEach(node => {
             node.setAttribute('id', nodeId + 1);
-            tagsHtml += `<a class='btn btn-sm btn-primary mr-1' href='#${nodeId}'>${node.innerHTML}</a>`;
+            tagsHtml += `<a class='btn btn-sm btn-primary mr-1' href='#${nodeId+1}'>${node.innerHTML}</a>`;
             document.querySelector('#tag-section').innerHTML = tagsHtml
             nodeId++;
         });

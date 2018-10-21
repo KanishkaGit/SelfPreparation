@@ -41,4 +41,6 @@ h5 img{
     background-color: yellow;
     color:black;
 }
-
+pre{
+    margin: 10px 0px 10px 0px;   
+}
